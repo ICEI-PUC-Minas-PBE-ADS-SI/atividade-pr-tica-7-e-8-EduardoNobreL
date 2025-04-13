@@ -1,13 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+    <title>Portal de Notícias BH</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 <body>
-    <h1>Olá mundo</h1>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Portal de Notícias BH</h1>
+            <form class="search-form">
+                <input type="search" placeholder="Buscar notícias..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index_new.html?article=Reforma do Mercado Central">Nova Página</a></li>
+                <li><a href="index_final.html?article=Festival de Gastronomia">Página Final</a></li>
+                <li><a href="index_final_version.html?article=Novo Sistema de Transporte">Versão Final</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#politica">Política</a></li>
+                <li><a href="#economia">Economia</a></li>
+                <li><a href="#esportes">Esportes</a></li>
+                <li><a href="#cultura">Cultura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="featured-news">
+            <article class="main-article">
+                <img src="https://picsum.photos/id/1/800/400" alt="Notícia Principal">
+                <h2>Novo Parque será Inaugurado no Centro de BH</h2>
+                <p>Espaço verde trará mais qualidade de vida para moradores da região central...</p>
+            </article>
+        </section>
+
+        <section class="news-grid" id="news-grid">
+        </section>
+
+        <section class="newsletter">
+            <h2>Receba nossas notícias</h2>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Seu melhor e-mail" required>
+                <button type="submit">Inscrever-se</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Sobre Nós</h3>
+                <p>Portal de notícias dedicado a manter você informado sobre os acontecimentos em BH.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contato</h3>
+                <p>Email: contato@portalbh.com.br</p>
+                <p>Telefone: (31) 3333-3333</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Portal de Notícias BH. Todos os direitos reservados.</p>
+        </div>
+    </footer>
 </body>
 </html>
