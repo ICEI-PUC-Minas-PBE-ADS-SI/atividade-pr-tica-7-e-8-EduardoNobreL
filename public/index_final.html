@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Final</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Página Final</h1>
+    </header>
+    <main>
+        <section id="article-info">
+            <h2>Artigo Selecionado</h2>
+            <p id="article-title"></p>
+        </section>
+    </main>
+    <script>
+        const articleTitle = getQueryStringParameter('article');
+        document.getElementById('article-title').textContent = articleTitle ? articleTitle : 'Nenhum artigo selecionado.';
+    </script>
+</body>
+</html>
