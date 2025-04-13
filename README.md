@@ -12,15 +12,10 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome:Eduardo Nobre de Oliveira Lino
+- Matricula:815782
+- Proposta de projeto escolhida:Portal de Noticias
+- Breve descrição sobre seu projeto:Portal de Noticias
 
-## Print da versão responsiva com CSS puro
+public\imagem\print codigo.png (print dos codigos da home page e da pagina detalhes)
 
-<<  COLOQUE A IMAGEM AQUI >>
-
-## Print da versão responsiva com Bootstrap
-
-<<  COLOQUE A IMAGEM AQUI >>
