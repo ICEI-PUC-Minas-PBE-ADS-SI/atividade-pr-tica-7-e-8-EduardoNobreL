@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias BH - Cultura</title>
+    <link rel="stylesheet" href="css/cultura.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Portal de Notícias BH</h1>
+            <form class="search-form">
+                <input type="search" placeholder="Buscar notícias..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="politica.html">Política</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="article-info">
+            <h2>Cultura</h2>
+            <article>
+                <h3>Festival de Inverno de BH Terá Programação Gratuita</h3>
+                <p>A prefeitura confirmou a edição 2025 do tradicional Festival de Inverno de BH. O evento contará com apresentações de música, dança, teatro e gastronomia, espalhadas por várias regiões da cidade com entrada gratuita.</p>
+            </article>
+            <article>
+                <h3>Mostra de Cinema Mineiro Exibe Obras de Novos Diretores</h3>
+                <p>O Cine Santa Tereza recebe a Mostra de Cinema Mineiro com filmes independentes de jovens diretores da região. A entrada é gratuita e o evento acontece até o fim do mês com sessões comentadas e workshops.</p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        function getQueryStringParameter(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        const articleTitle = getQueryStringParameter('article');
+        if (articleTitle) {
+            const titleElement = document.createElement('p');
+            titleElement.textContent = "Artigo selecionado: " + articleTitle;
+            document.getElementById('article-info').appendChild(titleElement);
+        }
+    </script>
+</body>
+</html>
+
+</html>

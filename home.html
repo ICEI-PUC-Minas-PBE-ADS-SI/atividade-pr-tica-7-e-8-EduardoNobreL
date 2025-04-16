@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Versão Final</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Portal de Notícias BH</h1>
+            <form class="search-form">
+                <input type="search" placeholder="Buscar notícias..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="politica.html">Política</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="article-info">
+            <h2>Artigo Selecionado</h2>
+            <p id="article-title"></p>
+        </section>
+    </main>
+    <script>
+        const articleTitle = getQueryStringParameter('article');
+        document.getElementById('article-title').textContent = articleTitle ? articleTitle : 'Nenhum artigo selecionado.';
+    </script>
+</body>
+</html>

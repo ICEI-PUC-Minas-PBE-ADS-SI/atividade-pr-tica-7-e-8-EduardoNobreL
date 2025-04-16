@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias BH - Economia</title>
+    <link rel="stylesheet" href="css/economia.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Portal de Notícias BH</h1>
+            <form class="search-form">
+                <input type="search" placeholder="Buscar notícias..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="politica.html">Política</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="article-info">
+            <h2>Economia</h2>
+            <article>
+                <h3>Inflação em BH Registra Queda em Março</h3>
+                <p>O índice de inflação em Belo Horizonte apresentou uma leve queda em março, com destaque para a redução nos preços dos alimentos e do transporte público. Especialistas consideram o movimento como reflexo das políticas monetárias do Banco Central.</p>
+            </article>
+            <article>
+                <h3>Comércio da Capital Mineira Prevê Alta nas Vendas para o Dia das Mães</h3>
+                <p>Empresários do setor varejista estão otimistas com o aumento nas vendas para o Dia das Mães em Belo Horizonte. A expectativa é de um crescimento de 12% em comparação ao mesmo período do ano passado, impulsionado por promoções e campanhas locais.</p>
+            </article>
+        </section>
+    </main>
+
+    <script>
+        function getQueryStringParameter(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        const articleTitle = getQueryStringParameter('article');
+        if (articleTitle) {
+            const titleElement = document.createElement('p');
+            titleElement.textContent = "Artigo selecionado: " + articleTitle;
+            document.getElementById('article-info').appendChild(titleElement);
+        }
+    </script>
+</body>
+</html>

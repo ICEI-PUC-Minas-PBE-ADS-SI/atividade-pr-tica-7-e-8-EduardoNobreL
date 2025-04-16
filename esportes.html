@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal de Notícias em BH</title>
+    <link rel="stylesheet" href="css/esportes.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Portal de Notícias BH</h1>
+            <form class="search-form">
+                <input type="search" placeholder="Buscar notícias..." required>
+                <button type="submit">Buscar</button>
+            </form>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="politica.html">Política</a></li>
+                <li><a href="economia.html">Economia</a></li>
+                <li><a href="esportes.html">Esportes</a></li>
+                <li><a href="cultura.html">Cultura</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="article-info">
+            <h2>Artigo Selecionado</h2>
+            <p id="article-title"></p>
+        </section>
+
+        <section id="esportes-bh">
+            <h2>Notícias Esportivas em Belo Horizonte</h2>
+            <ul>
+                <li>
+                    <strong>Internacional x Cruzeiro:</strong> As equipes se enfrentam às 18h30 deste domingo no Beira-Rio, em Porto Alegre, pela segunda rodada do Campeonato Brasileiro.
+                </li>
+                <li>
+                    <strong>Clube Belo Horizonte:</strong> O clube encerrou o ano com o torneio "Clássicos CBH" e a final do Cifuzinho 2024, promovendo integração e espírito esportivo entre os associados.
+                </li>
+                <li>
+                    <strong>Liga Esportiva NESCAU®:</strong> Evento reuniu mais de mil jovens em Belo Horizonte, com destaque para a participação feminina no skate.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <script>
+        function getQueryStringParameter(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        const articleTitle = getQueryStringParameter('article');
+        document.getElementById('article-title').textContent = articleTitle ? articleTitle : 'Nenhum artigo selecionado.';
+    </script>
+</body>
+</html>

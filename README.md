@@ -17,5 +17,6 @@ Leia o enunciado completo no Canvas.
 - Proposta de projeto escolhida:Portal de Noticias
 - Breve descrição sobre seu projeto:Portal de Noticias
 
-public\imagem\print codigo.png (print dos codigos da home page e da pagina detalhes)
+![alt text](<public/imagem/print da pagina principal.png>) Print da pagina principal do site.
 
+![alt text](<public/imagem/print do detalhe da noticia.png>) Print dos detlhes da noticia.
